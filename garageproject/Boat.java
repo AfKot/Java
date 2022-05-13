@@ -1,6 +1,6 @@
 package com.qa.main.day5.garageproject;
 
-public class Boat extends Vehicle implements HasDoors, HasEngine {
+public class Boat extends Vehicle {
 	
 //	Fields:
 	private int sails;
@@ -14,23 +14,11 @@ public class Boat extends Vehicle implements HasDoors, HasEngine {
 	}
 
 @Override
-public boolean hasEngine() {
-	// TODO Auto-generated method stub
-	return false;
-}
-
-@Override
-public int hasDoors() {
-	// TODO Auto-generated method stub
-	return 0;
-}
-
-@Override
 public float fixVehicle() {
 	// TODO Auto-generated method stub
 	return 0;
 }
-	
+
 	
 	
 

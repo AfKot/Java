@@ -1,6 +1,6 @@
 package com.qa.main.day5.garageproject;
 
-public class Truck extends Vehicle implements HasDoors, HasEngine, HasWheels {
+public class Truck extends Vehicle {
 	
 	private boolean trailer;
 
@@ -21,25 +21,7 @@ public class Truck extends Vehicle implements HasDoors, HasEngine, HasWheels {
 		return fixVehicle;
 	}
 
-	@Override
-	public int hasDoors() {
-		// TODO Auto-generated method stub
-		return 0;
-	}
 
-	@Override
-	public int hasWheels() {
-		// TODO Auto-generated method stub
-		return 0;
-	}
-
-	@Override
-	public boolean hasEngine() {
-		// TODO Auto-generated method stub
-		return false;
-	}
-	
-	
 	
 	
 }
