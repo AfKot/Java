@@ -5,20 +5,21 @@ public abstract class Vehicle {
 //	Fields:
 	private String colour;
 	private int seats;
-	private String sound;
+	private String condition;
 	
 //	Constructor: 
 	public Vehicle(String colour, int seats, String sound) {
 		super();
 		this.colour = colour;
 		this.seats = seats;
-		this.sound = sound;
+		this.condition = sound;
 	}
 	
+//	Abstract method
 	public abstract float fixVehicle();
 	
-
 //	Getters and Setters:
+
 	public String getColour() {
 		return colour;
 	}
@@ -35,13 +36,17 @@ public abstract class Vehicle {
 		this.seats = seats;
 	}
 
-	public String getSound() {
-		return sound;
+	public String getCondition() {
+		return condition;
 	}
 
-	public void setSound(String sound) {
-		this.sound = sound;
+	public void setCondition(String condition) {
+		this.condition = condition;
 	}
+	
+
+
+	
 
 	
 	

@@ -2,29 +2,42 @@ package com.qa.main.day5.garageproject;
 
 import java.util.ArrayList;
 
+//THIS IS WHERE ALL THE METHODS WILL BE
+
 public class Garage {
 	
-// Garage charge to fix objects/Vehicles:
+//	Array List to store data:
 	
-	public float garageCost;
+	public ArrayList<Vehicle> garageList = new ArrayList<>();
+
 	
-// need: Add, Remove, Get and Fix from list
+// need: Add, Remove, Get Vehicle, Get all Vehicles and Fix from list
 	
-	public ArrayList<Vehicle> garageFix = new ArrayList<>();
 	
 	public boolean addVehicle(Vehicle vehicle) {
-		return garageFix.add(vehicle);
+		garageList.add(vehicle);
+		return true;
 	}
 	
-	public Vehicle delVehicle(int i) {
-		return garageFix.remove(i);
+//	To remove: it takes in our index number as an integer
+	public Vehicle delVehicle(int index) {
+		return garageList.remove(index);
 	}
 	
-	public Vehicle getVehicle(int i) {
-		return garageFix.get(i);
+	public Vehicle getVehicle(int index) {
+		return garageList.get(index);
 	}
 	
-	public
+	public float fixVehicleInGarage(int index) {
+		Vehicle vehicleToFix = getVehicle(index);
+		return vehicleToFix.fixVehicle();
+	}
+	
+	public ArrayList<Vehicle> getAllVehicles() {
+		return garageList;
+	}
+	
+	
 	
 	
 }
